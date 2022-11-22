@@ -18,6 +18,7 @@ body{
 .container{
     width: 100%;
     display: table;/* pour mettre l'un a coté de l'autres fonctionne avec table-cell*/
+    margin-bottom: 10%;
 }
 .gauche, .droite{
     display: table-cell;
@@ -99,6 +100,9 @@ body{
     /*margin: 0 auto;/* pour centrer au milieu*/
     margin-left: 177px;/*pour decaler les dates et paragraphe de experiences*/
 }
+.competances{
+    margin-bottom: 10%;
+}
 .droite .table .date{
     display: table-cell;
     width: 100px;
@@ -121,11 +125,16 @@ body{
 }
 .barre{
     width: 250px;
+    margin: 10px 5%;
 }
 .barre .gris{
     background: #cccccc;
     width: 100%;
     height: 5px;
+
+}
+.barre .gris p {
+    height: 100%;
 }
 .p5{
     width: 5%;
@@ -206,4 +215,24 @@ body{
 .p100{
     width: 100%;
     background: #fecb00;
+}
+/*responsive*/
+@media (max-width:800px)
+{
+    .container{
+        display: block;
+    }
+    .gauche, .droite{
+        display: block;
+        width: 100%;
+    }
+    .gros{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .image{
+        padding: 0;
+        padding-top:calc(100%/2);
+    }
 }
