@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Montserrat medium";
+    src: url("fonts/Montserrat-Medium.ttf") format('truetype');/* format= pour des navigateur different*/
+}
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("fonts/Montserrat-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("fonts/Montserrat-Bold.ttf") format('truetype');
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat medium";
+}
+.container{
+    width: 100%;
+    display: table;/* pour mettre l'un a coté de l'autres fonctionne avec table-cell*/
+}
+.gauche, .droite{
+    display: table-cell;
+}
+.titre{
+    display: flex;
+    background: #232537;
+    border-bottom: 2px solid #393a4d;
+}
+.carre{
+    background: #fecb00;
+    width: 30px;
+    height: 30px;
+}
+
+.titre h3{
+    font-family: "Montserrat semiBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 30px; /*comme .carre remonte l'ecriture*/
+    vertical-align: middle;/*pour aligner au milieu vertical*/
+    margin:0 5% 0;/*1er 0 pour le haut et le dernier 0 pour le bas aligne le carré avec les titres*/
+}
+.paragraphe{
+    width: 50%;
+    margin: 0 auto;
+}
+.paragraphe p b{
+    font-family: "Montserrat semiBold";
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+.paragraphe p span{
+    font-family: "Montserrat medium";
+    font-size: 16px;
+    display: block;
+}
+.paragraphe p a{
+    color: #fff;
+    text-decoration: none;
+}
+.gauche{
+    width: 30%;
+    color: #fff;
+}
+.bleue{
+    background: #1b1e2f;
+}
+.droite{
+    width: 70%;
+    vertical-align: top;
+}
+.droite .titre{
+    border-left:10px solid #fecb00;
+    border-bottom: none;/*supprime les ligne noir coté blanc droit*/
+}
+.image{
+    padding: 25%;
+}
+.image img{
+    width: 250px;
+    height: auto;
+    border: 5px solid #fecb00;
+    border-radius: 50%;
+    clip-path: ellipse(50% 50%);/* fonctionne comme border radius mais peut faire des formes differente */
+}
+.gris{
+    background: #ebebeb;
+}
+.gros{
+    padding: 5% 0;
+    margin: 9% 0 11.5% 0;
+    display: block;
+}
+.table, .competences{
+    display: table;
+    /*margin: 0 auto;/* pour centrer au milieu*/
+    margin-left: 177px;/*pour decaler les dates et paragraphe de experiences*/
+}
+.droite .table .date{
+    display: table-cell;
+    width: 100px;
+    text-align: left;
+
+}
+.droite .table .paragraphe{
+    display: table-cell;
+    /*min-width: 400px;
+    max-width: 400px;*/
+}
+.droite.blanc .paragraphe{
+    margin-left: 177px;
+}
+.competence{
+    display: table-cell;
+    font-family: "Montserrat medium";
+    font-size: 13px;
+    color: #2d2d2d;
+}
+.barre{
+    width: 250px;
+}
+.barre .gris{
+    background: #cccccc;
+    width: 100%;
+    height: 5px;
+}
+.p5{
+    width: 5%;
+    background: #fecb00;
+}
+.p10{
+    width: 10%;
+    background: #fecb00;
+}
+.p15{
+    width: 15%;
+    background: #fecb00;
+}
+.p20{
+    width: 20%;
+    background: #fecb00;
+}
+.p25{
+    width: 25%;
+    background: #fecb00;
+}
+.p30{
+    width: 30%;
+    background: #fecb00;
+}
+.p35{
+    width: 35%;
+    background: #fecb00;
+}
+.p40{
+    width: 40%;
+    background: #fecb00;
+}
+.p45{
+    width: 45%;
+    background: #fecb00;
+}
+.p50{
+    width: 50%;
+    background: #fecb00;
+}
+.p55{
+    width: 55%;
+    background: #fecb00;
+}
+.p60{
+    width: 60%;
+    background: #fecb00;
+}
+.p65{
+    width: 65%;
+    background: #fecb00;
+}
+.p70{
+    width: 70%;
+    background: #fecb00;
+}
+.p75{
+    width: 75%;
+    background: #fecb00;
+}
+.p80{
+    width: 80%;
+    background: #fecb00;
+}
+.p85{
+    width: 85%;
+    background: #fecb00;
+}
+.p90{
+    width: 90%;
+    background: #fecb00;
+}
+.p95{
+    width: 95%;
+    background: #fecb00;
+}
+.p100{
+    width: 100%;
+    background: #fecb00;
+}
